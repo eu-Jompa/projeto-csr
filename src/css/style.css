@@ -450,8 +450,12 @@ footer .creditos .conteudo a:hover{
     .hamburguer{
         display: block;
     }
-    header i.close-menu{
+    header .fa-x .close-menu{
         display: none;
+        transition: 0.5s;
+    }
+    header{
+        display: flex;
     }
     header{
         display: flex;
@@ -462,34 +466,58 @@ footer .creditos .conteudo a:hover{
         justify-content: space-around;
 
     }
-    header  .imagem-logo{
-        justify-content: ;
-        align-items: ;
+    header .imagem-logo{
         margin-left: 0px;
     }
     
     header .hamburguer{
         display: flex;
         width: 15vw;
+        color: var(--branco);
+        font-size: 30px;
     }
 
     header nav{
-        position: absolute;
+        position: fixed;
         flex-direction: column;
-        height: 100px;
-        top: 0;
-        left: 50vw;
-        height: 100vh;
+        visibility: hidden;
+        top: 0vh;
+        left: 0vw;
+        min-width: 100vw;
+        height: 0vh;
         background-color: var(--azul-escuro);
         margin-top: 70px;
-        
+        transition: 0.5s;
     }
+    nav.open-nav{
+        display: flex;
+        height: 45vh;
+        top: 0vh;
+        left: 0vw;
+        min-width: 100vw;
+        
+        visibility: visible;
+    }
+    header nav:not(.open-nav) ul li {
+        opacity: 0;
+    }
+    header nav:not(.open-nav) .rede-social {
+        opacity: 0;
+    }
+
     header nav ul{
         flex-direction: column;
+        font-size: 16px;
         
     }
-
-
+    header nav ul li{
+        width: 50vw;
+        height: 30px;
+        opacity: 1;
+        transition: 0.5s;
+        
+    }
+    
 
     /* hero */
     main .hero{
@@ -508,6 +536,7 @@ footer .creditos .conteudo a:hover{
         flex-direction: column;
         gap: 30px;
         height: auto;
+        padding: 50px 0px;
         
     }
     .section-ensino .card img{
@@ -526,7 +555,7 @@ footer .creditos .conteudo a:hover{
     }
     main .section-sti .sti-img{
         
-        width: 60vw;
+        width: 70vw;
         height: 425px;
         overflow: hidden;
         display: flex;
@@ -545,6 +574,10 @@ footer .creditos .conteudo a:hover{
         color: var(--branco);
         
     
+    }
+    .section-sti .conteudo h2{
+        width: 90vw;
+        font-size: 39px;
     }
 
     /* section Contato */
