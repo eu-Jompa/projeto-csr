@@ -446,7 +446,7 @@ footer .creditos .conteudo a:hover{
     color: #3D85C6;
 }
 /* responsividade Tablet */
-@media (max-width: 768px){
+@media screen and (max-width: 768px) {
     .hamburguer{
         display: block;
     }
@@ -669,32 +669,5 @@ footer .creditos .conteudo a:hover{
         max-width: 80%;
         height: auto;
     }
-    }
-/* responsividade para celular */
-@media (max-width: 480px) {
-    /* Ajusta o padding e margem para telas menores */
-    .footer-col {
-        padding: 10px;
-    }
-
-    /* Ajusta o layout de parcerias ainda mais para telas pequenas */
-    .parcerias-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Tamanho das imagens menor para melhor visualização em smartphones */
-    .footer-col img {
-        max-width: 70%;
-        height: auto;
-    }
-
-    /* Ajustes adicionais como fonte e espaçamento */
-    .footer {
-        padding: 20px;
-    }
-
-    .parcerias-content a img {
-        width: 50%;
-    }
+    
 }
