@@ -4,7 +4,7 @@
     --branco: #ffffff;
     --font-primaria: "Work Sans", sans-serif;
     --font-secundaria: "Poppins", sans-serif;
-    --overlay: #022463a5;;
+    --overlay: #0224638b;;
 
 }
 
@@ -125,7 +125,7 @@ header nav .segundo-menu .menu-drop{
     cursor: pointer;
 
 }
-
+/* hero */
 main{
     width: 100vw;
     height: auto;
