@@ -1,0 +1,193 @@
+:root{
+    --azul-escuro: #022463;
+    --azul-claro: #3D85C6;
+    --branco: #ffffff;
+    --font-primaria: "Work Sans", sans-serif;
+    --font-secundaria: "Poppins", sans-serif;
+    --overlay: #0224638b;;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    color: var(--cor-primaria);
+    background-color: var(--azul-escuro);
+    align-items: center;
+    
+}
+.menu.imagem-logo{
+    width: 90px;
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    margin-right: 100px;
+    
+} 
+.imagem-logo img{
+    width: 100px;
+}
+.hamburguer{
+    display: none;
+}
+i.close-menu{
+    display: none;
+}
+/*  nav */
+nav{ 
+    display: flex;
+    max-width: 80vw;
+    height: 10vh;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    width: 40vw;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav ul li{
+    list-style-type: none;
+    font-family: var(--font-secundaria);
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+
+    
+}
+nav a{
+    text-decoration: none;
+    color: var(--branco);
+}
+nav ul .menu-drop{
+    position: relative;
+    cursor: pointer;
+
+}
+nav ul .menu-drop .drop{
+    width: 200px; /* Largura fixa para o submenu */
+    display: none; /* Esconde o submenu por padrão */
+    position: absolute;
+    top: 100%; /* Posiciona o submenu abaixo do item "Níveis de Ensino" */
+    left: 0; /* Alinha o submenu com o item "Níveis de Ensino" */
+    background-color: var(--azul-escuro); /* Cor de fundo do submenu */
+    z-index: 1000;
+    border-radius: 10px;
+}
+nav ul .menu-drop:hover .drop{
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+nav ul .menu-drop .drop a:hover{
+    
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+    transition: 0.5s;
+}
+nav ul .menu-drop .drop a {
+    padding: 10px;
+    color: var(--branco);
+    text-align: left;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* redee-social */
+.rede-social{
+    
+    margin: 0px 50px
+    
+}
+.rede-social i{
+    margin: 5px;
+    font-size: 18px;
+}
+nav .segundo-menu{
+    width: 20vw;
+}
+nav .segundo-menu .menu-drop{
+    position: relative;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 768px) {
+    .menu{
+        display: flex;
+        position: fixed;
+        z-index: 2; 
+        width: 100vw;       
+        justify-content: space-between;
+        
+        
+    
+    }
+    .hamburguer{
+        display: block;
+    }
+    .fa-x .close-menu{
+        display: none;
+        transition: 0.5s;
+    }
+    .imagem-logo{
+        margin-left: 0px;
+        margin-right: 100pxs;
+    }
+    
+    .hamburguer{
+        display: flex;
+        width: 15vw;
+        color: var(--branco);
+        font-size: 30px;
+    }
+
+    nav{
+        position: fixed;
+        flex-direction: column;
+        visibility: hidden;
+        top: 0vh;
+        left: 0vw;
+        min-width: 100vw;
+        height: 0vh;
+        background-color: var(--azul-escuro);
+        margin-top: 70px;
+        transition: 0.5s;
+    }
+    nav.open-nav{
+        display: flex;
+        height: 45vh;
+        top: 0vh;
+        left: 0vw;
+        min-width: 100vw;
+        
+        visibility: visible;
+    }
+    nav:not(.open-nav) ul li {
+        opacity: 0;
+    }
+    nav:not(.open-nav) .rede-social {
+        opacity: 0;
+    }
+
+    nav ul{
+        flex-direction: column;
+        font-size: 16px;
+        
+    }
+    nav ul li{
+        width: 50vw;
+        height: 30px;
+        opacity: 1;
+        transition: 0.5s;
+        
+    }
+
+
+
+}

@@ -4,7 +4,7 @@
     --branco: #ffffff;
     --font-primaria: "Work Sans", sans-serif;
     --font-secundaria: "Poppins", sans-serif;
-    --overlay: #0224638b;;
+    --overlay: #022463c2;;
 
 }
 
@@ -28,7 +28,7 @@ header{
     color: var(--cor-primaria);
     background-color: #022463;
 }
-header .imagem-logo{
+.imagem-logo{
     width: 90px;
     display: flex;
     margin-left: 100px;
@@ -36,30 +36,30 @@ header .imagem-logo{
     margin-right: 100px;
     
 } 
-header .imagem-logo img{
+.imagem-logo img{
     width: 100px;
 }
 .hamburguer{
     display: none;
 }
-header i.close-menu{
+i.close-menu{
     display: none;
 }
 /*  nav */
-header nav{ 
+nav{ 
     display: flex;
     max-width: 80vw;
     height: 10vh;
     align-items: center;
 }
-header nav ul{
+nav ul{
     display: flex;
     width: 40vw;
     align-items: center;
     justify-content: center;
     
 }
-header nav ul li{
+nav ul li{
     list-style-type: none;
     font-family: var(--font-secundaria);
     font-size: 16px;
@@ -69,16 +69,16 @@ header nav ul li{
 
     
 }
-header nav a{
+nav a{
     text-decoration: none;
     color: var(--branco);
 }
-header nav ul .menu-drop{
+nav ul .menu-drop{
     position: relative;
     cursor: pointer;
 
 }
-header nav ul .menu-drop .drop{
+nav ul .menu-drop .drop{
     width: 200px; /* Largura fixa para o submenu */
     display: none; /* Esconde o submenu por padrão */
     position: absolute;
@@ -88,18 +88,18 @@ header nav ul .menu-drop .drop{
     z-index: 1000;
     border-radius: 10px;
 }
-header nav ul .menu-drop:hover .drop{
+nav ul .menu-drop:hover .drop{
     display: flex;
     flex-direction: column;
     transition: 0.5s;
 }
-header nav ul .menu-drop .drop a:hover{
+nav ul .menu-drop .drop a:hover{
     
     background-color: var(--branco);
     color: var(--azul-escuro);
     transition: 0.5s;
 }
-header nav ul .menu-drop .drop a {
+nav ul .menu-drop .drop a {
     padding: 10px;
     color: var(--branco);
     text-align: left;
@@ -117,10 +117,10 @@ header nav ul .menu-drop .drop a {
     margin: 5px;
     font-size: 18px;
 }
-header nav .segundo-menu{
+nav .segundo-menu{
     width: 20vw;
 }
-header nav .segundo-menu .menu-drop{
+nav .segundo-menu .menu-drop{
     position: relative;
     cursor: pointer;
 
@@ -147,7 +147,7 @@ main .hero{
     position: relative;
     
 }
-/* main .hero .overlay{
+main .hero .overlay{
     position: absolute;
     min-width: 100%;
     height: 400px;
@@ -157,7 +157,7 @@ main .hero{
     z-index: 0;
     backdrop-filter: blur(2px);
 
-} */
+}
 main .hero h1{
     
     font-size: 50px;
@@ -450,12 +450,9 @@ footer .creditos .conteudo a:hover{
     .hamburguer{
         display: block;
     }
-    header .fa-x .close-menu{
+    .fa-x .close-menu{
         display: none;
         transition: 0.5s;
-    }
-    header{
-        display: flex;
     }
     header{
         display: flex;
@@ -466,18 +463,18 @@ footer .creditos .conteudo a:hover{
         justify-content: space-around;
 
     }
-    header .imagem-logo{
+    .imagem-logo{
         margin-left: 0px;
     }
     
-    header .hamburguer{
+    .hamburguer{
         display: flex;
         width: 15vw;
         color: var(--branco);
         font-size: 30px;
     }
 
-    header nav{
+    nav{
         position: fixed;
         flex-direction: column;
         visibility: hidden;
@@ -498,19 +495,19 @@ footer .creditos .conteudo a:hover{
         
         visibility: visible;
     }
-    header nav:not(.open-nav) ul li {
+    nav:not(.open-nav) ul li {
         opacity: 0;
     }
-    header nav:not(.open-nav) .rede-social {
+    nav:not(.open-nav) .rede-social {
         opacity: 0;
     }
 
-    header nav ul{
+    nav ul{
         flex-direction: column;
         font-size: 16px;
         
     }
-    header nav ul li{
+    nav ul li{
         width: 50vw;
         height: 30px;
         opacity: 1;
