@@ -250,6 +250,7 @@ main .section-sti .sti-img{
 .section-sti .sti-img img{
     width: 100%;
     object-fit: contain;
+    
 }
 .section-sti .conteudo{
     width: 40%;
@@ -288,6 +289,8 @@ main .section-sti .sti-img{
     height: 80vh;
     justify-content: space-evenly;
     align-items: center;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
 }
 .section-contato .form{
 
@@ -359,6 +362,7 @@ footer{
 footer h5{
     font-size: 40px;
     color: var(--azul-escuro);
+    margin-top: 50px;
 }
 .parceria-img {
     display: flex;
@@ -518,14 +522,19 @@ footer .creditos .conteudo a:hover{
 
     /* hero */
     main .hero{
-        height: 80dvh;
+        height: 50dvh;
         text-align: center;
+        
+        
     }
     main .hero .overlay{
-        height: 80dvh;
+        height: 50dvh;
+        align-content: center;
     }
     main .hero h1{
-        font-size: 26px;
+        font-size: 24px;
+        align-items: center;
+        margin-top: 50px;
 
     }
     /* section Ensino */
@@ -552,30 +561,49 @@ footer .creditos .conteudo a:hover{
     }
     main .section-sti .sti-img{
         
-        width: 70vw;
+        width: 95vw;
         height: 425px;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 0px;
+        border-radius: 50px;
+        margin-bottom: 50px;
 
 
     }
     .section-sti .sti-img img{
-        border-radius: 50px;
+        border-radius: 0px;
     }
     .section-sti .conteudo{
-        width: 90%;
-        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
         color: var(--branco);
+        text-align: left;
+
         
     
     }
     .section-sti .conteudo h2{
-        width: 90vw;
-        font-size: 39px;
+        width: 90%;
+        font-size: 34px;
+        text-align: left;
     }
+    .section-sti .conteudo p{
+        text-align: left;
+        max-width: 90%;
+        font-size: 18px
+        
+        
+    }
+    .section-sti .conteudo a{
+        margin-right: 120px;
+    }
+    
+
 
     /* section Contato */
 
@@ -590,11 +618,11 @@ footer .creditos .conteudo a:hover{
     }
     .section-contato .form {
         
-        width: 70vw;
+        width: 90vw;
 
     }
     .section-contato .form form{
-        width: 70vw;
+        width: 90vw;
 
     }
 
@@ -654,14 +682,14 @@ footer .creditos .conteudo a:hover{
         margin-bottom: 20px;
     }
 
-    /* Ajusta o layout de parcerias para exibir uma coluna por vez */
+    
     .parcerias-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    /* Ajusta o tamanho das imagens no footer */
+    
     .footer-col img {
         max-width: 80%;
         height: auto;

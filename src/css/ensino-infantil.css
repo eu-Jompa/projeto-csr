@@ -1,0 +1,198 @@
+:root{
+    --azul-escuro: #022463;
+    --azul-claro: #3D85C6;
+    --branco: #ffffff;
+    --salmao: #F3B7B6;
+    --amarelo: #F5DD61;
+    --font-primaria: "Work Sans", sans-serif;
+    --font-secundaria: "Poppins", sans-serif;
+    
+    --overlay: #0224638b;;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-primaria);
+    
+}
+header{
+    width: 100%;
+}
+body{
+    width: 100vw;
+}
+body,main{
+    max-width: 100%;
+    height: auto;
+    background-color: var(--salmao);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    
+}
+main .imagem{
+    width: 100%;
+    height: 500px;
+    background-image: url(/src/img/nossa-historia.jpg);
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-size: cover; /* Isso garante que a imagem cubra toda a área */
+    position: relative;
+    
+}
+
+main .overlay{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: var(--overlay);
+    opacity: 0.8;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+    align-content: center;
+}
+main .overlay h1{
+    opacity: 1;
+    z-index: 2;
+    color: var(--branco);
+}
+
+/* Seção 2 */
+main .section-content{
+    width: 100%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section-content .img{
+    width: 40%;
+    margin: 50px 20px 50px 20px;
+}
+.section-content .img img{
+    max-width: 100%
+}
+.section-content .conteudo{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.section-content .conteudo h2{
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 
+    30px;
+}
+.section-content .conteudo span{
+    color: var(--azul-escuro);
+    font-weight: 500;
+}
+.section-content .conteudo p{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.section-content .faixa-etaria{
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 10px;
+    background-color: var(--amarelo);
+
+}
+.faixa-etaria h3{
+    background-color: var(--azul-claro);
+    width: 50%;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    color: var(--branco);
+    font-size: 24px;
+}
+
+.section-content .faixa-etaria .turma{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.section-content .faixa-etaria .idade{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: solid 2px var(--salmao)
+}
+/* Seção de projetos */
+main .projetos {
+    
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 100px;
+    background-color: var(--azul-escuro);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding-bottom: 30px;
+
+}
+main .projetos h4 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--azul-escuro);
+    background-color: var(--branco);
+    padding: 10px 86px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+main .projetos .col-1, .col-2{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+main .projetos .col-1 .card, .col-2 .card{
+    width: 300px;
+    height: 300px;
+    background-color: var(--branco);
+    margin: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+
+}
+main .projetos .col-1 .card i, .col-2 .card i{
+    font-size: 50px;
+    margin:  20px;
+}
+
+main .projetos .col-1 .card .title, .col-2 .card .title{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+    margin: 0;
+    padding: 0;
+}
